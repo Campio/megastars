@@ -1,0 +1,11 @@
+{
+  "name": "megastars",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Campio/megastars.git",
+  "author": "hxuanhung <hxuanhung@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "2.0.0-beta.30"
+  }
+}
