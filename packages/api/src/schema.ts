@@ -3,23 +3,23 @@ import { makeExecutableSchema } from 'graphql-tools';
 
 const rootSchema = [`
 type Query {
-	hello: String!
+    hello: String!
 }
-`]
+`];
 
 const rootResolvers = {
-	Query: {
-		hello(root, { }) {
-			return `Hello`;
-		}
-	}
-}
+    Query: {
+        hello(root, { }) {
+            return `Hello`;
+        },
+    },
+};
 const schema = [...rootSchema];
 const resolvers = merge(rootResolvers);
 
 const executableSchema = makeExecutableSchema({
-	typeDefs: schema,
-	resolvers,
+    typeDefs: schema,
+    resolvers,
 });
 
 export default executableSchema;

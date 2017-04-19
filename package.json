@@ -1,11 +1,17 @@
 {
-  "name": "megastars",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:Campio/megastars.git",
-  "author": "hxuanhung <hxuanhung@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "lerna": "2.0.0-beta.30"
-  }
+	"name": "megastars",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "git@github.com:Campio/megastars.git",
+	"author": "hxuanhung <hxuanhung@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"precommit": "lerna run tslint",
+		"prepush": "lerna run tslint"
+	},
+	"devDependencies": {
+		"husky": "^0.13.3",
+		"lerna": "2.0.0-beta.30"
+	},
+	"dependencies": {}
 }
